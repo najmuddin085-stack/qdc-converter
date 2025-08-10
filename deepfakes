@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NVivo Classification & Codebook — Deepfake UMKM</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height:1.5; margin:24px; color:#111; }
+    header { margin-bottom:18px; }
+    h1 { margin:0 0 6px 0; font-size:20px; }
+    p.lead { margin:0; color:#444; font-size:14px; }
+    section { margin-top:20px; border-top:1px solid #e6e6e6; padding-top:18px; }
+    table { width:100%; border-collapse:collapse; margin-top:8px; }
+    th, td { border:1px solid #ddd; padding:8px; text-align:left; vertical-align:top; }
+    th { background:#f7f7f7; font-weight:600; }
+    .small { font-size:13px; color:#555; }
+    .code { background:#f4f4f8; padding:6px 10px; border-radius:6px; font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace; display:block; white-space:pre-wrap; }
+    footer { margin-top:28px; font-size:13px; color:#666; }
+    .btn { display:inline-block; margin-top:10px; padding:8px 12px; background:#1f6feb; color:white; text-decoration:none; border-radius:6px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NVivo Classification & Codebook</h1>
+    <p class="lead">Proyek: <strong>Deepfake untuk Promosi UMKM — Kabupaten Bireuen</strong></p>
+    <p class="small">Isi halaman: Case Classification (Responden) & Node Classification (Tema / Subtema) — disiapkan untuk NVivo.</p>
+  </header>
+
+  <section id="howto">
+    <h2>Petunjuk Singkat</h2>
+    <ol>
+      <li>Simpan halaman ini sebagai <code>NVivo_Classification_Deepfake.html</code> (File → Save As).</li>
+      <li>Buka di browser untuk meninjau. Untuk impor ke NVivo, Anda bisa menggunakan tabel ini sebagai referensi ketika membuat <em>Case Classifications</em> dan <em>Nodes</em> secara manual, atau gunakan file Excel/XLSX yang sudah saya siapkan sebelumnya.</li>
+      <li>Kalau mau, saya bisa bantu konversi ke format lain (CSV/XLSX/.qdc) — bilang saja.</li>
+    </ol>
+  </section>
+
+  <section id="case">
+    <h2>Case Classification — <span class="small">Respondent (Contoh template)</span></h2>
+    <p class="small">Gunakan sheet ini untuk membuat <em>cases</em> di NVivo (satu baris = satu case/responden).</p>
+
+    <table aria-label="Case Classification">
+      <thead>
+        <tr>
+          <th>CaseID</th>
+          <th>Nama Responden</th>
+          <th>Usia</th>
+          <th>Pekerjaan</th>
+          <th>Lokasi</th>
+          <th>Peran dalam Ekosistem UMKM</th>
+          <th>Tingkat Pemahaman AI</th>
+          <th>Frekuensi Mengonsumsi Produk UMKM</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>R01</td><td>Responden 1</td><td></td><td></td><td></td><td>Konsumen</td><td>Tidak tahu</td><td>Bulanan</td></tr>
+        <tr><td>R02</td><td>Responden 2</td><td></td><td></td><td></td><td>Pelaku UMKM</td><td>Pernah dengar</td><td>Mingguan</td></tr>
+        <tr><td>R03</td><td>Responden 3</td><td></td><td></td><td></td><td>Pemerintah</td><td>Paham dasar</td><td>Jarang</td></tr>
+        <!-- Tambah baris sesuai jumlah responden -->
+      </tbody>
+    </table>
+  </section>
+
+  <section id="nodes">
+    <h2>Node Classification — Tema & Subtema</h2>
+    <p class="small">Daftar node yang direkomendasikan untuk dibuat di NVivo (Nodes → New Node / Import Codebook bila tersedia).</p>
+
+    <table aria-label="Node Classification">
+      <thead>
+        <tr>
+          <th>NodeID</th>
+          <th>Tema Utama</th>
+          <th>Sub-Tema</th>
+          <th>Definisi singkat</th>
+          <th>Kategori Tujuan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>N01</td><td>Peluang</td><td>Kreativitas konten</td><td>Penggunaan deepfake meningkatkan daya tarik promosi</td><td>Tujuan 1</td></tr>
+        <tr><td>N02</td><td>Peluang</td><td>Efisiensi biaya</td><td>Mengurangi biaya pembuatan iklan konvensional</td><td>Tujuan 1</td></tr>
+        <tr><td>N03</td><td>Tantangan</td><td>Etika & privasi</td><td>Potensi pelanggaran identitas atau manipulasi opini</td><td>Tujuan 1</td></tr>
+        <tr><td>N04</td><td>Dampak Ekonomi</td><td>Peningkatan penjualan</td><td>Kenaikan penjualan setelah konten deepfake</td><td>Tujuan 2</td></tr>
+        <tr><td>N05</td><td>Dampak Ekonomi</td><td>Akses pasar baru</td><td>Penetrasi segmen baru melalui konten AI</td><td>Tujuan 2</td></tr>
+        <tr><td>N06</td><td>Strategi</td><td>Regulasi & etika</td><td>Aturan penggunaan teknologi secara aman</td><td>Tujuan 3</td></tr>
+        <tr><td>N07</td><td>Strategi</td><td>Edukasi konsumen</td><td>Memberikan literasi digital untuk menghindari penipuan</td><td>Tujuan 3</td></tr>
+        <tr><td>N08</td><td>Persepsi Konsumen</td><td>Reaksi terhadap konten deepfake</td><td>Antusias / Netral / Negatif</td><td>—</td></tr>
+        <tr><td>N09</td><td>Harapan Masa Depan</td><td>Prediksi tren</td><td>Perkiraan apakah deepfake akan menjadi mainstream atau tetap niche</td><td>—</td></tr>
+        <!-- Tambah row node lain jika diperlukan -->
+      </tbody>
+    </table>
+  </section>
+
+  <section id="codebook">
+    <h2>Codebook (Ringkasan)</h2>
+    <p class="small">Ringkasan singkat tiap kategori untuk ditempel sebagai <em>description</em> di NVivo ketika membuat node.</p>
+
+    <div class="code">
+Profil Responden:
+- Data demografis (usia, pekerjaan, lokasi), peran (konsumen/UMKM/pemerintah), tingkat literasi AI.
+
+Pemahaman & Pengalaman Deepfake:
+- Familiaritas, pengalaman melihat, cara mengenali, format yang diterima.
+
+Peluang & Tantangan:
+- Manfaat (kreativitas, efisiensi, penetrasi pasar) dan risiko (etika, penyalahgunaan, kehilangan kepercayaan).
+
+Dampak Ekonomi:
+- Indikator utilitas: peningkatan penjualan, jangkauan pasar, ROI, loyalitas.
+
+Etika & Strategi:
+- Transparansi (label "konten virtual"), persetujuan wajah/suara, edukasi, regulasi, sanksi.
+
+Masa Depan:
+- Prediksi tren, saran untuk UMKM & kebijakan publik.
+    </div>
+  </section>
+
+  <footer>
+    <p>Butuh saya konversi HTML ini menjadi file Excel (.xlsx) untuk langsung diimpor ke NVivo, atau ingin versi <em>.qdc</em> yang kompatibel NVivo 12? Saya bisa buatkan — bilang "buatkan .qdc" atau "buatkan Excel" saja.</p>
+  </footer>
+</body>
+</html>
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NVivo Classification & Codebook — Deepfake UMKM</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height:1.5; margin:24px; color:#111; }
+    header { margin-bottom:18px; }
+    h1 { margin:0 0 6px 0; font-size:20px; }
+    p.lead { margin:0; color:#444; font-size:14px; }
+    section { margin-top:20px; border-top:1px solid #e6e6e6; padding-top:18px; }
+    table { width:100%; border-collapse:collapse; margin-top:8px; }
+    th, td { border:1px solid #ddd; padding:8px; text-align:left; vertical-align:top; }
+    th { background:#f7f7f7; font-weight:600; }
+    .small { font-size:13px; color:#555; }
+    .indent { padding-left: 24px; background: #fafafa; }
+    .code { background:#f4f4f8; padding:6px 10px; border-radius:6px; font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace; display:block; white-space:pre-wrap; }
+    footer { margin-top:28px; font-size:13px; color:#666; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NVivo Classification & Codebook</h1>
+    <p class="lead">Proyek: <strong>Deepfake untuk Promosi UMKM — Kabupaten Bireuen</strong></p>
+    <p class="small">Case Classification & Node Classification (dengan turunan node) — siap dibuat di NVivo.</p>
+  </header>
+
+  <section id="case">
+    <h2>Case Classification — Respondent</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>CaseID</th>
+          <th>Nama Responden</th>
+          <th>Usia</th>
+          <th>Pekerjaan</th>
+          <th>Lokasi</th>
+          <th>Peran dalam Ekosistem UMKM</th>
+          <th>Tingkat Pemahaman AI</th>
+          <th>Frekuensi Konsumsi Produk UMKM</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>R01</td><td>Responden 1</td><td></td><td></td><td></td><td>Konsumen</td><td>Tidak tahu</td><td>Bulanan</td></tr>
+        <tr><td>R02</td><td>Responden 2</td><td></td><td></td><td></td><td>Pelaku UMKM</td><td>Pernah dengar</td><td>Mingguan</td></tr>
+        <tr><td>R03</td><td>Responden 3</td><td></td><td></td><td></td><td>Pemerintah</td><td>Paham dasar</td><td>Jarang</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="nodes">
+    <h2>Node Classification — Tema, Sub-Tema & Turunan</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>NodeID</th>
+          <th>Tema / Subtema</th>
+          <th>Definisi singkat</th>
+          <th>Kategori Tujuan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>N01</td><td>Peluang</td><td>Potensi positif dari penggunaan deepfake untuk UMKM</td><td>Tujuan 1</td></tr>
+        <tr><td>N01-1</td><td class="indent">Kreativitas konten</td><td>Visual menarik dan inovatif</td><td>Tujuan 1</td></tr>
+        <tr><td>N01-2</td><td class="indent">Efisiensi biaya</td><td>Biaya promosi lebih rendah</td><td>Tujuan 1</td></tr>
+        <tr><td>N01-3</td><td class="indent">Penetrasi segmen baru</td><td>Masuk ke pasar yang belum dijangkau</td><td>Tujuan 1</td></tr>
+
+        <tr><td>N02</td><td>Tantangan</td><td>Hambatan dan risiko penggunaan deepfake</td><td>Tujuan 1</td></tr>
+        <tr><td>N02-1</td><td class="indent">Etika & privasi</td><td>Pelanggaran identitas dan data</td><td>Tujuan 1</td></tr>
+        <tr><td>N02-2</td><td class="indent">Kepercayaan publik</td><td>Keraguan konsumen pada keaslian konten</td><td>Tujuan 1</td></tr>
+        <tr><td>N02-3</td><td class="indent">Resiko hukum</td><td>Pelanggaran hak cipta atau hukum</td><td>Tujuan 1</td></tr>
+
+        <tr><td>N03</td><td>Dampak Ekonomi</td><td>Pengaruh deepfake terhadap utilitas ekonomi UMKM</td><td>Tujuan 2</td></tr>
+        <tr><td>N03-1</td><td class="indent">Peningkatan penjualan</td><td>Naiknya jumlah transaksi</td><td>Tujuan 2</td></tr>
+        <tr><td>N03-2</td><td class="indent">Akses pasar baru</td><td>Peluang ekspansi geografis atau demografis</td><td>Tujuan 2</td></tr>
+        <tr><td>N03-3</td><td class="indent">ROI</td><td>Rasio keuntungan terhadap biaya</td><td>Tujuan 2</td></tr>
+
+        <tr><td>N04</td><td>Strategi</td><td>Panduan adopsi deepfake sesuai etika</td><td>Tujuan 3</td></tr>
+        <tr><td>N04-1</td><td class="indent">Regulasi & etika</td><td>Aturan dan kebijakan penggunaan</td><td>Tujuan 3</td></tr>
+        <tr><td>N04-2</td><td class="indent">Edukasi konsumen</td><td>Meningkatkan literasi digital</td><td>Tujuan 3</td></tr>
+        <tr><td>N04-3</td><td class="indent">Transparansi</td><td>Label dan pemberitahuan konten AI</td><td>Tujuan 3</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p class="small">Struktur ini bisa di-copy ke Excel untuk diimpor ke NVivo atau digunakan sebagai panduan membuat nodes manual. Indentasi di kolom "Tema / Subtema" menunjukkan turunan node (*child node*).</p>
+  </footer>
+</body>
+</html>
